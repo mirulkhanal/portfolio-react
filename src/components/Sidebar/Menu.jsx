@@ -25,7 +25,7 @@ const Menu = () => {
               <p className='text-white'>PROJECTS</p>
             </Link>
           </div>
-          <div className='flex items-center gap-6 cursor-pointer item font-WorkSans hover:bg-[#212423] w-fit hover:px-2 rounded-md'>
+          <div className='flex items-center gap-6 cursor-pointer item font-WorkSans hover:bg-[#212423] w-max hover:px-2 rounded-md'>
             <BsFillPersonFill className='text-primary-green' />
             <Link to={'/about'}>
               <p className='text-white'>ABOUT ME</p>

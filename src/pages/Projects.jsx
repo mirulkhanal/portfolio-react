@@ -1,13 +1,18 @@
 import { useContext } from 'react';
+import Profile from '../components/projects/Profile';
 import ProjectItem from '../components/projects/ProjectItem';
-import { RepoContext } from '../context/RepoContext';
+import { GithubContext } from '../context/GithubContext';
 
 const Projects = () => {
-  const { repos } = useContext(RepoContext);
+  const { repos } = useContext(GithubContext);
   console.log('Repositories count: ', repos);
   return (
-    <div>
-      {repos && repos.map((repo) => <ProjectItem repo={repo} key={repo.id} />)}
+    <div className='w-full h-full p-2 text-white bg-primary-dark'>
+      <Profile />
+      <div className='flex flex-col gap-2 my-2 project-list'>
+        {repos &&
+          repos.map((repo) => <ProjectItem repo={repo} key={repo.id} />)}
+      </div>
     </div>
   );
 };

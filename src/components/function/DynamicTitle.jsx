@@ -22,10 +22,13 @@ const titles = [
 ];
 
 const DynamicTitle = () => {
-  const { typedTitle, selectedTitle } = useTitle(titles);
+  const { typedTitle, selectedTitle, phase } = useTitle(titles);
   return (
     <span
-      className={cn('font-bold text-shadow-cn', selectedTitle.style)}
+      className={cn('font-bold text-shadow-cn', selectedTitle.style, {
+        'end-cursor': phase !== Phase.deleting,
+        blinking: phase === Phase.idle,
+      })}
       aria-label={selectedTitle}>
       {typedTitle}
     </span>
