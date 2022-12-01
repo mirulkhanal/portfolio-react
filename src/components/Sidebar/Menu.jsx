@@ -6,6 +6,7 @@ import {
   BsHouseFill,
 } from 'react-icons/bs';
 import { IoMdPhotos } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   return (
@@ -14,26 +15,36 @@ const Menu = () => {
         <div className='flex flex-col gap-2 p-0 m-0'>
           <div className='flex items-center gap-6 cursor-pointer item font-WorkSans hover:bg-[#212423] w-fit hover:px-2 rounded-md'>
             <BsHouseFill className='text-primary-green' />
-            <p className='text-white transition-transform delay-200'>HOME</p>
+            <Link to={'/'}>
+              <p className='text-white transition-transform delay-200'>HOME</p>
+            </Link>
           </div>
           <div className='flex items-center gap-6 cursor-pointer item font-WorkSans hover:bg-[#212423] w-fit hover:px-2 rounded-md'>
             <BsFillDoorOpenFill className='text-primary-green' />
-            <p className='text-white'>PROJECTS</p>
+            <Link to={'/projects'}>
+              <p className='text-white'>PROJECTS</p>
+            </Link>
           </div>
           <div className='flex items-center gap-6 cursor-pointer item font-WorkSans hover:bg-[#212423] w-fit hover:px-2 rounded-md'>
             <BsFillPersonFill className='text-primary-green' />
-            <p className='text-white'>ABOUT ME</p>
+            <Link to={'/about'}>
+              <p className='text-white'>ABOUT ME</p>
+            </Link>
           </div>
         </div>
 
         <div className='flex flex-col gap-2 p-0 m-0'>
           <div className='flex items-center gap-6 cursor-pointer item font-WorkSans hover:bg-[#212423] w-full hover:px-2 rounded-md'>
             <IoMdPhotos className='text-primary-green' />
-            <p className='text-white'>RESUME</p>
+            <Link to={'resume'}>
+              <p className='text-white'>RESUME</p>
+            </Link>
           </div>
           <div className='flex items-center gap-6 cursor-pointer item font-WorkSans hover:bg-[#212423] w-full hover:px-2 rounded-md'>
             <BsFillPersonBadgeFill className='text-primary-green' />
-            <p className='text-white'>CONTACT</p>
+            <Link to={'contact'}>
+              <p className='text-white'>CONTACT</p>
+            </Link>
           </div>
         </div>
       </div>
