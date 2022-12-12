@@ -5,7 +5,7 @@ import { GithubContext } from '../context/GithubContext';
 
 const Projects = () => {
   const { repos } = useContext(GithubContext);
-  console.log('Repositories count: ', repos);
+
   return (
     <div className='w-full h-full p-2 text-white bg-primary-dark'>
       <Profile />

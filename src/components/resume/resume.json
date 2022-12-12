@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "date": "March 15th, 2020",
+    "title": "Bachelors in Computing (Ongoing)",
+    "school": "Naaya Aaayam Multi-Disciplinary Institute",
+    "type": "Education",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea optio ex asperiores quia odio rem ut eaque harum velit culpa?"
+  },
+  {
+    "id": 2,
+    "date": "January 5th, 2018",
+    "title": "Diploma in Computer Science",
+    "school": "La trobe University",
+    "type": "Education",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea optio ex asperiores quia odio rem ut eaque harum velit culpa?"
+  },
+  {
+    "id": 3,
+    "date": "4th April, 2014",
+    "title": "A Levels (Science)",
+    "school": "Xaviers International College",
+    "type": "Education",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea optio ex asperiores quia odio rem ut eaque harum velit culpa?"
+  },
+  {
+    "id": 4,
+    "date": "23rd March, 2012",
+    "title": "High School SLC",
+    "school": "Butwal Public School",
+    "type": "Education",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea optio ex asperiores quia odio rem ut eaque harum velit culpa?"
+  }
+]

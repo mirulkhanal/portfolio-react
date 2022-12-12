@@ -20,32 +20,13 @@
     animation: blink 1s step-start infinite;
   }
 
-  .animate-drop {
-    animation: drop 0.5s ease-in-out forwards;
-  }
-  .hidden-animate {
-    animation: rise 0.5s ease-in-out forwards;
-  }
   .profile-element {
     @apply p-2 text-white rounded-lg bg-primary-gray;
   }
-  @keyframes drop {
-    0% {
-      height: 0px;
-    }
-    100% {
-      height: 200px;
-    }
+  .timeline-item:nth-child(even) {
+    align-self: flex-end;
   }
-  @keyframes rise {
-    0% {
-      height: 200px;
-    }
-    100% {
-      height: 0px;
-      display: hidden;
-    }
-  }
+
   @keyframes blink {
     50% {
       opacity: 0;
